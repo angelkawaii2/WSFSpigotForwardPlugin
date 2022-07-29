@@ -1,0 +1,12 @@
+name: WsSpigotMsgForward
+version: ${project.version}
+main: dev.raincandy.spigot.wsmsgforward.WsSpigotMsgForward
+api-version: 1.16
+authors: [ angelkawaii2 ]
+prefix: "WsSpigotMsgForward"
+description: Msg Forward Plugin based Websocket
+website: https://github.com/angelkawaii2
+commands:
+  wsreply:
+    description: "WS消息转发内部指令"
+    usage: "/wsreply <reply|cancel|reload>"

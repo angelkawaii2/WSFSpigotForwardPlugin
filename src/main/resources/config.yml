@@ -1,0 +1,30 @@
+# Do not change this
+version: 1
+# Enable this plugin
+enable: false
+# Print debug info
+debug: false
+servers:
+  myconn01:
+    setting:
+      connect: false
+      clientId: "minecraft-client-1"
+      # Please use http/https, not support ws/wss yet
+      url: "https://localhost:3009"
+      token: "sec-key-114514"
+    chat:
+      allowReceiveChat: false
+      # If this is empty, whitelist check will not be enabled.
+      whitelistRemoteClientIds:
+        - "admin-client"
+      forward: false
+      forwardPrefix: "#"
+      targetClientIds:
+        - "target01"
+        - "client2"
+    command:
+      allowRemoteCommand: false
+      # Allowed remote whitelist clients, empty to allow all remote clients to execute commands
+      # You should be aware of potential security issues
+      whitelistRemoteClientIds:
+        - "admin-client"
